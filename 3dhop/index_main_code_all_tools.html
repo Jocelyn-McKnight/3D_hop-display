@@ -45,10 +45,7 @@ function setup3dhop() {
 
 	presenter.setScene({
     meshes: {
-        // Use a CORS proxy to fetch the model from the external server
-        "mesh_1": {
-            url: "https://cors-anywhere.herokuapp.com/https://zenodo.org/record/13776782/files/Raven_Ruthwell_Cross_small.ply"
-        }
+        "mesh_1": { url: "models/Raven_Ruthwell_Cross_5.ply" }
     },
     modelInstances: {
         "model_1": { mesh: "mesh_1" }
