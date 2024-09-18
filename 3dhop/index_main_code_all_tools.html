@@ -46,19 +46,12 @@ function setup3dhop() {
 
 	presenter.setScene({
 		meshes: {
-			"Gargoyle" : { url: "models/gargo.nxz" },
-			"Cube" : { url: "models/cube.ply" }
+			"mesh_1" : { url: "models/Raven_Ruthwell_5.ply" } 
 		},
 		modelInstances : {
-			"Gargo" : {
-				mesh : "Gargoyle"
-			},
-			"Base" : {
-				mesh : "Cube",
-				transform : { 
-					translation : [0.0, -5.0, 0.0],
-					scale       : [3.0, 0.2, 3.0]
-				},
+			"model_1" : { 
+				mesh  : "mesh_1",
+				color : [0.8, 0.7, 0.75]
 			}
 		},
 		trackball: {
